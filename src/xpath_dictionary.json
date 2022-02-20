@@ -1,0 +1,25 @@
+{
+  "urls": "(//section/div)[13]/div/div/div/a",
+  "input": {
+    "next_page": "//a[@data-testid=\"NextPage\"]"
+  },
+  "output" : {
+    "price": "(//span[@itemprop='price'])[2]",
+    "processor_brand": "//h3[contains(@class, \"flex\")][contains(text(),\"Processor Brand\")]/following-sibling::p/span",
+    "processor_type": "//h3[contains(@class, \"flex\")][contains(text(),\"Processor Type\")]/following-sibling::p/span",
+    "hard_drive_capacity": "//h3[contains(@class, \"flex\")][contains(text(),\"Hard Drive Cap\")]/following-sibling::p/span",
+    "processor_core_type": "//h3[contains(@class, \"flex\")][contains(text(),\"Processor Core Type\")]/following-sibling::p/span",
+    "manufacturer": "//h3[contains(@class, \"flex\")][text()=\"Manufacturer\"]/following-sibling::p/span",
+    "product_line": "//h3[contains(@class, \"flex\")][contains(text(),\"Product Line\")]/following-sibling::p/span",
+    "processor_speed": "//h3[contains(@class, \"flex\")][contains(text(),\"Processor Speed\")]/following-sibling::p/span",
+    "manufacturer_part_number": "//h3[contains(@class, \"flex\")][contains(text(),\"Manufacturer Part\")]/following-sibling::p/span",
+    "wireless_technology": "//h3[contains(@class, \"flex\")][contains(text(),\"Wireles\")]/following-sibling::p/span",
+    "ram_memory": "//h3[contains(@class, \"flex\")][contains(text(),\"RAM Memory\")]/following-sibling::p/span",
+    "operating_system": "//h3[contains(@class, \"flex\")][text()=\"Operating System\"]/following-sibling::p/span",
+    "battery_life": "//h3[contains(@class, \"flex\")][contains(text(),\"Battery Life\")]/following-sibling::p/span",
+    "model": "//h3[contains(@class, \"flex\")][contains(text(),\"Model\")]/following-sibling::p/span",
+    "screen_size": "//h3[contains(@class, \"flex\")][contains(text(),\"Screen Size\")]/following-sibling::p/span",
+    "brand": "//h3[contains(@class, \"flex\")][text()=\"Brand\"]/following-sibling::p/span",
+    "assembled_product_dimensions": "//h3[contains(@class, \"flex\")][contains(text(),\"Assembled Product Dimensions\")]/following-sibling::p/span",
+    "features": "//h3[contains(@class, \"flex\")][text()=\"Features\"]/following-sibling::p/span"}
+}

@@ -1,0 +1,1 @@
+python3 /Users/bsmalla/PycharmProjects/webscraper/src/master.py
