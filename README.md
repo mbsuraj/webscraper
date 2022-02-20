@@ -12,6 +12,13 @@ bash script
 ## Setup 
 Fork this repo, pull it into your local system and run! 
 
+The code will also give out snapshots whenever the scrape is 
+successful or when error screenshots when the scrape fails.
+
+## Output
+The final output is a .csv file with all the scrapes and their
+success status.
+
 ## Status
-Few more refinements on the way. I will have more scraper samples
-coming in for Amazon.com, etsy.com etc.
+Few more refinements on the way to make this code more generic.
+I will have more scraper samples coming in for Amazon.com, etsy.com etc.
