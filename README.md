@@ -6,7 +6,7 @@ Note that this is not to be used for commercial purposes. It is only
 for testing and learning purposes.
 
 ## Technology
-Python
+Python  
 bash script
 
 ## Setup 
