@@ -32,7 +32,7 @@ class Walmart(Scraper):
         print(f"{len(urls)} product details to scrape.")
         row_names = ['url', 'name'] + [row_name for row_name in self.xpaths['output'].keys()] + ['scraper_success']
         row_values = []
-        for url in urls[:2]:
+        for url in urls:
             if len(row_values) != 0:
                 row_values.append(self._get_product_details(url))
             else:
@@ -90,7 +90,7 @@ class Walmart(Scraper):
 
     def _get_main_page_urls(self):
         page_urls = []
-        for page in range(3):
+        for page in range(26):
             if len(page_urls) == 0:
                 page_urls = [self.url + f"?page={page+2}&affinityOverride=default"]
             else:

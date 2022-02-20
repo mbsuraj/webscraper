@@ -42,9 +42,6 @@ class Scraper:
                 )
         time.sleep(2)
 
-    def get_output(self):
-        pass
-
     def send_input(self):
         pass
 
