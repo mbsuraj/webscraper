@@ -1,3 +1,4 @@
-output/*
+output/debug/*
+output/scraper_result/*
 # Project exclude paths
 /venv/
