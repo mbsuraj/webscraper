@@ -16,7 +16,7 @@ class Scraper:
                 )
 
     def _get_options(self):
-        PROXY_STR = "111.222.111.222:1234"
+        # PROXY_STR = "111.222.111.222:1234"
         options = webdriver.ChromeOptions()
         options.add_argument("start-maximized")
         options.add_argument("--incognito")

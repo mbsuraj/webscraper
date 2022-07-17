@@ -13,7 +13,7 @@ import pandas as pd
 class Walmart(Scraper):
     def __init__(self, url):
         super().__init__(url)
-        with open('xpath_dictionary.json') as json_file:
+        with open('walmart_xpath_dictionary.json') as json_file:
             self.xpaths = json.load(json_file)
         self.laptop_details = None
 
@@ -22,6 +22,7 @@ class Walmart(Scraper):
             self.driver.get(self.url)
             time.sleep(2)
             urls = self._get_product_urls()
+            print(len(urls))
             self._refresh_driver()
         except NoSuchElementException:
             self.driver.get_screenshot_as_file("snapshot_for_debug.png")
@@ -63,7 +64,7 @@ class Walmart(Scraper):
         urls = []
         i = 0
         pages = self._get_main_page_urls()
-        for page in pages:
+        for page in pages[0:3]:
             try:
                 main_elem = self.driver.find_elements_by_xpath(self.xpaths['urls'])
                 if len(main_elem) == 0:
